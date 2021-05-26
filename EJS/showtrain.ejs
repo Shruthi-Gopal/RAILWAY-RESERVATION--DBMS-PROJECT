@@ -1,0 +1,67 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Available trains</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    function select(x){
+      document.getElementById("selection").value = x ;
+    }
+    </script>
+    <style media="screen">
+    .exp:hover{
+      background-color: lightgreen;
+      font-weight: 800;
+    }
+    </style>
+  </head>
+  <body style="background-color: thistle;">
+    <h1 class="booking-intro">AVAILABLE TRAINS</h1>
+    <table class="table-center">
+      <tr>
+        <td>Express Number</td>
+        <td>Train Number</td>
+        <td>Express Name</td>
+        <td>From</td>
+        <td>Destination</td>
+        <td>Departure Date</td>
+        <td>Departure Time</td>
+      </tr>
+      <% for(var i = 0;i < result.length; i++){ %>
+        <tr>
+          <td>
+            <button type="button" class="exp" align="center" name="button" onclick="select(<%= result[i]["EXPRESS_NO"] %>)">
+              <%= result[i]["EXPRESS_NO"] %>
+            </button>
+            <!--<a href="#" onclick="select(<%= result[i]["EXPRESS_NO"] %>)"><%= result[i]["EXPRESS_NO"] %></a>-->
+            <!-- <a href="/confirm"><%= result[i]["EXPRESS_NO"] %></a> -->
+          </td>
+          <td>
+            <%= result[i]["TRAIN_NO"] %>
+          </td>
+          <td>
+            <%= result[i]["express_name"] %> Express
+          </td>
+          <td>
+            <%= result[i]["FROMM"] %>
+          </td>
+          <td>
+            <%= result[i]["TOO"] %>
+          </td>
+          <td>
+            <%= result[i]["departure_date"] %>
+          </td>
+          <td>
+            <%= result[i]["DEPARTURE_TIME"] %>
+          </td>
+        </tr>
+      <% } %>
+    </table>
+    <div align="center">
+      <form class="bookingform" action="/confirm" method="post">
+        <input type="text" style="text-align: center;" name="selection" id="selection" value="" placeholder="Express_no" readonly>
+        <input type="submit" class="smallbut" name="" value="Book tickets">
+      </form>
+    </div>
+  </body>
+</html>

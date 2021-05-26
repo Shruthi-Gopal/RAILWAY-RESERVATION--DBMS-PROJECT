@@ -1,0 +1,47 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Past Transactions</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: thistle;">
+    <h1 class="booking-intro">Past Transactions</h1>
+    <div align="center">
+    <table>
+      <thead>
+        <td>Booking ID</td>
+        <td>Express Number</td>
+        <td>Train Number</td>
+        <td>Total FC Seats</td>
+        <td>Total SC Seats</td>
+        <td>Total Cost</td>
+      </thead>
+      <% for(var i = 0;i < result.length; i++){ %>
+        <tr>
+          <td>
+            <%= result[i]["BOOKING_ID"] %>
+          </td>
+          <td>
+            <%= result[i]["EXPRESS_NO"] %>
+          </td>
+          <td>
+            <%= result[i]["TRAIN_NO"] %>
+          </td>
+          <td>
+            <%= result[i]["TOTAL_FC_SEATS"] %>
+          </td>
+          <td>
+            <%= result[i]["TOTAL_SC_SEATS"] %>
+          </td>
+          <td>
+            <%= result[i]["TOTAL_COST"] %>
+          </td>
+        </tr>
+      <% } %>
+    </table>
+    </div>
+    <div align="center">
+        <button type="button" class="smallbut" name="button" onclick="location.href='/home'">Back to Home page</button>
+    </div>
+  </body>
+</html>

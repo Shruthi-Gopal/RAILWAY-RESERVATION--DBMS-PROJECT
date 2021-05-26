@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>SignUp Page</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <div class="signupSection">
+  <div class="info">
+    <h2>Welcome to Indian Railways</h2>
+    <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+    
+    <p>Provide Your Details</p>
+    
+    <a class="link" href="/Login" style="color:white">Already a user? Login</a>
+    
+  </div>
+  <form action="/insert" method="POST" class="userform" name="userform">
+    <h2>Sign Up</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="uid"></label>
+        <input type="text" class="inputFields" id="uid" name="uid" placeholder="UserID" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="uname"></label>
+        <input type="text" class="inputFields" id="uname" name="uname" placeholder="Username" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="pwd"></label>
+        <input type="password" class="inputFields" id="pwd" name="pwd" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="emailid"></label>
+        <input type="email" class="inputFields" id="emailid" name="emailid" placeholder="Email" value="" required/>
+      </li>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" name="join" alt="Add To Database" value="Add To Database">
+      </li>
+    </ul>
+  </form>
+</div>
+  
+
+
+</body>
+</html>

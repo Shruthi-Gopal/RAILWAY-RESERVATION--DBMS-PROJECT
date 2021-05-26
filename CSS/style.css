@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  background: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+}
+
+.signupSection {
+  background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(26, 7, 97, 0.5);
+}
+
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, 0.8);;
+  padding: 30px 0;
+  border-right: 5px solid rgba(60, 182, 212, 0.8);
+}
+.info h2 {
+  padding-top: 30px;
+  font-weight: 300;
+}
+.info p {
+  font-size: 18px;
+}
+.info .icon {
+  font-size: 8em;
+  padding: 20px 0;
+  color: #0ab4b4;
+}
+
+.userform {
+  width: 70%;
+  padding: 30px 0;
+  background: rgba(79, 58, 105, 0.8);
+  transition: .2s;
+}
+.userform h2 {
+  font-weight: 300;
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #0ab4b4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(68, 7, 104, 0.2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: rgba(79, 58, 105, 0.8);
+  transition: .2s;
+}
+.signupForm h2 {
+  font-weight: 300;
+}
+
+#join-btn {
+  border: 1px solid #0ab4b4;
+  background: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 3px 15px;
+  cursor: pointer;
+  transition: .4s;
+}
+#join-btn:hover {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 10px 80px;
+}
+
+.smallbut {
+  margin: 2%;
+  width: 25%;
+  padding: 14px 20px;
+  color: #fff;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: royalblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.smallbut:hover {
+  background-color: rgb(29, 101, 114);
+}
+
+.err {
+  text-align: center;
+  color: black;
+  background-color: red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size:x-large;
+  padding: 2%;
+}
+
+.success {
+  text-align: center;
+  color: black;
+  background-color: lightgreen;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size:x-large;
+  padding: 2%;
+}
+
+table,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+.table-center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 100px;
+}
+
+td{
+  align-content: center;
+  text-align: center;
+}
+
+.booking-intro{
+  padding: 30px;
+  font-family:sans-serif;
+  text-align: center;
+  background-color: rgb(155, 240, 233);
+  color: rgb(36, 17, 17);
+}
+
+.no_existing {
+  text-align: center;
+  color: rgb(243, 240, 240);
+  background-color: rgb(72, 15, 124);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size:x-large;
+  padding: 2%;
+}
+
+.smallbuttt{
+    background-color: #bd92e6; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  
+}
