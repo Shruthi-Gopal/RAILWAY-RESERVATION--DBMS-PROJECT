@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>Available trains</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletrain.css">
     <script type="text/javascript">
     function select(x){
       document.getElementById("selection").value = x ;
@@ -15,17 +15,18 @@
     }
     </style>
   </head>
-  <body style="background-color: thistle;">
+  <body class="mainbody">
+    <div class="bigdiv">
     <h1 class="booking-intro">AVAILABLE TRAINS</h1>
     <table class="table-center">
       <tr>
-        <td>Express Number</td>
-        <td>Train Number</td>
-        <td>Express Name</td>
-        <td>From</td>
-        <td>Destination</td>
-        <td>Departure Date</td>
-        <td>Departure Time</td>
+        <th>EXPRESS NUMBER</th>
+        <th>TRAIN NUMBER</th>
+        <th>EXPRESS NAME</th>
+        <th>FROM</th>
+        <th>DESTINATION</th>
+        <th>DEPARTURE DATE</th>
+        <th>DEPARTURE TIME</th>
       </tr>
       <% for(var i = 0;i < result.length; i++){ %>
         <tr>
@@ -60,8 +61,9 @@
     <div align="center">
       <form class="bookingform" action="/confirm" method="post">
         <input type="text" style="text-align: center;" name="selection" id="selection" value="" placeholder="Express_no" required onkeydown="return false;">
-        <input type="submit" class="smallbut" name="" value="Book tickets">
+        <input type="submit" class="smallbut smallbut1" name="" value="Book tickets">
       </form>
     </div>
+   </div> 
   </body>
 </html>

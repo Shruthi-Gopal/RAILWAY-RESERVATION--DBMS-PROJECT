@@ -2,21 +2,22 @@
   <head>
     <meta charset="utf-8">
     <title>Past Transactions</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletrain.css">
   </head>
-  <body style="background-color: thistle;">
+  <body class="mainbody">
+    <div class="bigdiv">
     <h1 class="booking-intro">Past Transactions</h1>
     <div align="center">
-    <table>
+    <table class="table-center" style="width: 80%;">
       <tr>
-        <td>Ticket number</td>
-        <td>Express no</td>
-        <td>Train no</td>
-        <td>Departure date</td>
-        <td>Depature time</td>
-        <td>No. of FC seats</td>
-        <td>No. of SC seats</td>
-        <td>Total Cost</td>
+        <th>TICKET NUMBER</th>
+        <th>EXPRESS NO</th>
+        <th>TRAIN NO</th>
+        <th>DEPARTURE DATE</th>
+        <th>DEPARTURE TIME</th>
+        <th>NO. OF FC SEATS</th>
+        <th>NO. OF SC SEATS</th>
+        <th>TOTAL COST</th>
         
       </tr>
       <% for(var i = 0;i < result.length; i++){ %>
@@ -50,7 +51,8 @@
     </table>
     </div>
     <div align="center">
-        <button type="button" class="smallbut" name="button" onclick="location.href='/home'">Back to Home page</button>
+        <button type="button" class="smallbut smallbut1" name="button" onclick="location.href='/home'">Back to Home page</button>
+    </div>
     </div>
   </body>
 </html>
