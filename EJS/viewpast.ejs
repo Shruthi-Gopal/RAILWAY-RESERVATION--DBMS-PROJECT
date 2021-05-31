@@ -8,14 +8,17 @@
     <h1 class="booking-intro">Past Transactions</h1>
     <div align="center">
     <table>
-      <thead>
-        <td>Booking ID</td>
-        <td>Express Number</td>
-        <td>Train Number</td>
-        <td>Total FC Seats</td>
-        <td>Total SC Seats</td>
+      <tr>
+        <td>Ticket number</td>
+        <td>Express no</td>
+        <td>Train no</td>
+        <td>Departure date</td>
+        <td>Depature time</td>
+        <td>No. of FC seats</td>
+        <td>No. of SC seats</td>
         <td>Total Cost</td>
-      </thead>
+        
+      </tr>
       <% for(var i = 0;i < result.length; i++){ %>
         <tr>
           <td>
@@ -26,6 +29,12 @@
           </td>
           <td>
             <%= result[i]["TRAIN_NO"] %>
+          </td>
+          <td>
+            <%= result[i]["DEPARTURE_DATE"]%>
+          </td>
+          <td>
+            <%= result[i]["DEPARTURE_TIME"]%>
           </td>
           <td>
             <%= result[i]["TOTAL_FC_SEATS"] %>
