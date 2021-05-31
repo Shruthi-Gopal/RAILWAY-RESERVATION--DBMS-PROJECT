@@ -6,9 +6,13 @@ GO TO THE REPORT FILE TO VIEW THE REPORT OF THE PROJECT
 Table of Contents
 
 0 - CSS (Contains the css files used for styling the frontend)
+
 1 - EJS (contains the ejs files used to filter and show trains from relations)
+
 2 - FRONTEND (contains all the HTML files created fro the frontend)
+
 3 - NODEJS (contains the srver file)
+
 4 - SQL FILES (contains the SQL queries used to the application)
 
 
